@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+h1{
+    font-size: xx-large;
+    color: black(243, 98, 98);
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+
+}
+.Intro{
+    text-align: center;
+    color: black;
+    width: 40%;
+    margin-left: 30%;
+}
+img{
+    width: 14em;
+    height: 16em;
+}
+button{
+    background-color: aquamarine;
+    color: black;
+    padding: 1em;
+    border-radius: 8px;
+    border-width: 7px;
+    margin-left: 42em;
+    margin-bottom: 3em;
+    cursor: pointer;
+}
+</style>
+<body>
+ <h1>My short story</h1>
+ <p class="Intro">My name is Gloriana, I am one of the EGI'S.
+    I love music, i have both  favorite Nigerian and 
+    American artist, Nigerian artist are Shallipopi,
+    Davido and Asake and American artist are Dax and
+    Lexnour. </p>
+    <button onclick="showImages()">see images</button>
+    <button onclick="hideImages()">Hide Image</button>
+
+<div id="div">
+<img src="./IMG/charles lwanga - icon.jpg" alt="girlie"> 
+<img src="./IMG/school design (5).jpg" alt="boy">
+<img src="./IMG/school design (6).jpg" alt="glo">
+<img src="./IMG/school design (7).jpg" alt="peculiar">
+<img src="./IMG/school design (8).jpg" alt="micheal"> 
+
+</div>
+<script>
+    let div = document.getElementById('div');
+    div.style.visibility = 'hidden';
+    let showImages = () => {
+        div.style.visibility = 'visible'
+    }
+    function hideImages() {
+        div.style.visibility = 'hidden';
+    }
+    </script>
+    
+    <body>
+    </html>
